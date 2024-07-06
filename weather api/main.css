@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
+.playwrite-us-modern-c2 {
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  *{
+    padding : 0 ;
+    margin : 0;
+    box-sizing: border-box; 
+    font-family:"Playwrite US Modern";
+  }
+  body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgb(48, 200, 238) 68%, rgb(32, 126, 232) 98%);
+    animation: gradient 20s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+  .wrapper {
+    padding: 10px;
+    width :100vw;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  h1{
+      text-align: center;
+      margin-top: 1rem;
+
+  }
+  .options{
+    display: flex;
+    width: 70%;
+    max-width: 600px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+ 
+  }
+  .options div{
+    padding: 0.5rem;
+    transition: all 1s;
+  }
+.currloc,.sloc,.load,.permission,.sd{
+   scale: 0;
+}
+.back{
+    background-color: rgba(128, 128, 128, 0.286);
+    transform: scale(1.05);
+    color: aliceblue;
+    text-shadow: 1px 0px 10px black;
+    border-radius: 1rem;
+    animation: selct1 1s ease-out  ;
+}
+
+.permission{
+  position: absolute;
+  display: flex;
+  background: rgb(255 255 255 / 50%);
+  border-radius: 100%;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  max-width: 600px;
+  box-shadow: 0px 0px 15px grey;
+padding :2rem;
+top: 12rem;
+align-self: center;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.l1{
+  font-size: 29px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: white;
+  transform: translateY(-15px);
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.l2{
+  font-size: 14px;
+  transform: translateY(-35px);
+}
+
+.gbutton{
+  transform: translateY(-35px);
+  padding: 5px;
+  width: 150px;
+  border-radius: 10px;
+  font-weight: 900; 
+  background-color: rgb(129, 47, 205);
+  color: aliceblue;
+  transition: all 0.5s ; 
+}
+.gbutton:hover{
+  scale: 1.09;
+  background: radial-gradient(circle at 50% 50%, rgba(67, 177, 234, 1) 0%, rgba(78, 149, 249, 1) 50%, rgba(15, 246, 246, 1) 100%);
+}
+.currloc{
+  position: absolute;
+  top: 11rem;
+  align-self: center;
+  display: flex;
+
+  width: 80%;
+  max-width: 700px;
+  gap: 5rem;
+justify-content: space-between;
+
+margin-left: 8%;
+}
+.city1,.state1{
+  text-align: center;
+
+  font-weight:500;
+}
+
+
+.cmain{
+
+  padding: 1rem;
+  width: 270px;
+  text-align: center;
+  height: 270px;
+  background: rgba(223, 221, 221, 0.684);
+  border: none;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 15px grey;
+  color: white;
+  text-shadow: 0px 0px 10px rgb(4, 3, 3);
+ 
+}
+.icon1 {
+  animation: an1 2s ease infinite alternate;
+  margin: 5px;
+}
+.tem1{
+  color: white;
+  font-weight: bolder;
+  text-shadow: 0px 0px 10px rgb(29, 28, 28);
+}
+.text1{
+  color: rgb(68, 66, 66);
+  margin-top: 10px;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px white;
+  
+}
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+.cards{
+
+ padding: 1rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background: rgba(223, 221, 221, 0.684);
+ height: 150px;
+ width: 150px;
+ border-radius: 100%;
+ color: white;
+ text-shadow: 0px 0px 5px rgb(4, 3, 3);
+ box-shadow: 0px 0px 15px grey;
+
+}
+.c1{
+  margin-top: 10%;
+  
+  animation: fan 10s ease alternate infinite;
+}
+@keyframes fan {
+  0%{
+    transform: scaleX(1) scaleY(1);
+  }
+  50%{
+    transform: scaleX(1.1) ;
+  }
+  100%{
+  transform:  scaleY(1.1);
+  }
+  
+}
+.logo {
+  height: 80px;
+  animation: an1 2s ease infinite alternate;
+}
+.windspeed
+{
+  transform: translateX(-120%);
+}
+.humid
+{
+  transform: translate(-50%);
+}
+.clouds
+{
+  transform: translate(-120%);
+}
+
+ .c1
+ {
+   position: relative;
+   top: 20px;
+ 
+
+ }
+.cards .info{
+  color: rgb(68, 66, 66);
+ 
+  font-weight: bold;
+  text-shadow: 0px 0px 10px white;
+  
+}
+.load{
+  align-self: center;
+}
+.load p{
+  text-align: center;
+}
+.load img{
+  height: 250px;
+  width: 250px;
+}
+.cards .dataw, .cards .datah, .cards .datac{
+  font-size: small;
+  font-weight: 600;
+}
+.windspeed .info, .windspeed .dataw{
+  transform: translateY(-11px);
+}
+.humid .logo{
+  height:60px;
+}
+
+.sloc{
+  position: absolute;
+  top: 10rem;
+  width: 80%;
+  max-width: 700px;
+  display:flex ;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+
+}
+.c2{
+  margin: 0 auto;
+}
+.windspeed2 , .clouds2 {
+  transform: translateY(-30%) ;
+}
+.humid2{
+  transform: translateY(10%);
+}
+.rest2{
+  display: flex;
+  margin: 2rem;
+  gap: 1rem;
+  align-self: center;
+}
+.tos{
+  width:100%
+  
+}
+.textinput{
+  width: 90%;
+ 
+  border-radius: 5px;
+  background: grey;
+  
+  border: 2px solid black;
+  text-align: center;
+  color: white;
+}
+.searchbutton{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background:rgb(91, 19, 91);
+  border: 2px solid white;
+  transition: all 0.5s ease;
+  margin: 0.5rem;
+}
+.textinput::placeholder{
+  color: white;
+}
+.rest2 .logo{
+  height:50px ;
+
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+@keyframes an1 {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="assets/cloud.png">
+    <title>Weather APP</title>
+</head>
+<body>
+   <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+   </div>
+    <div class="wrapper">
+        <h1>Weather App</h1>
+        <div class="options">
+            <div class="btab1">Your Weather</div>
+            <div class="btab2">Search Weather</div>
+            </div>
+            <div class="permission">
+                <img src="assets/location.png" class="locimg" height="90" width="90" loading="lazy">
+              <p class="l1">Grant Location Access</p>
+            <p class="l2">Allow Access to get Weather Information</p>
+            <button class="gbutton">GRANT ACCESS</button>
+            </div>
+            <!-- tab1 -->
+            <div class="currloc">
+           <div class="cmain c1">
+            <div class="location1">
+               <div class="city1"></div>
+               <div class="state1"></div>
+
+           </div>
+            
+           <div class="temp">
+               <div class="text1"></div>
+                   <img class="icon1"></img>
+                   <div class="tem1"></div>
+           </div>
+           </div>
+
+            <div class="rest">
+               <div class="cards windspeed">
+                  <img src="assets/wind.png" alt="" class="logo" >
+                  <div class="info">Wind Speed</div>
+                  <div class="dataw"></div>
+               </div>
+               <div class="cards humid">
+                  <img src="assets/humidity.png" alt="" class="logo">
+                  <div class="info">Humidity</div>
+                  <div class="datah"></div>
+               </div>
+               <div class="cards clouds">
+                  <img src="assets/cloud.png" alt="" class="logo">
+                  <div class="info">Clouds</div>
+                  <div class="datac"></div>
+               </div>
+  
+  
+              </div>
+
+            </div>
+
+            <!-- tab2 -->
+            <div class="load">
+              <img src="assets/loading.gif" height="150" width="150" loading="lazy">
+              <p>Loading...</p>
+            </div>
+
+            <!-- tab3 -->
+             <div class="sloc">
+           <div class="tos">  <input type="text" name="" class="textinput" placeholder="Search Location">
+             <button class="searchbutton">
+                <img src="assets/search.png" alt="" width="20" height="20" loading="lazy">
+             </button>
+</div>
+             
+                <div class="sd">
+              <div class="cmain c2">  
+                 <div class="location">
+               <div class="city"></div>
+               <div class="state"></div>
+           </div>
+            
+           <div class="temp">
+               <div class="text"></div>
+                   <img class="icon2"></img>
+                   <div class="tem"></div>
+           </div></div>
+     
+                 <div class="rest2">
+                  <div class="cards windspeed2">
+                     <img src="assets/wind.png" alt="" class="logo">
+                     <div class="info">Wind Speed</div>
+                     <div class="dataw2"></div>
+                  </div>
+                  <div class="cards humid2">
+                     <img src="assets/humidity.png" alt="" class="logo">
+                     <div class="info">Humidity</div>
+                     <div class="datah2"></div>
+                  </div>
+                  <div class="cards clouds2">
+                     <img src="assets/cloud.png" alt="" class="logo">
+                     <div class="info">Clouds</div>
+                     <div class="datac2"></div>
+                  </div>
+     
+     
+                 </div>
+                </div>
+           
+             </div>
+        
+    </div>
+ <script src="java.js"></script>   
+</body>
+</html>
